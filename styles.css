@@ -1,1 +1,77 @@
+body{
+    background-color: #1b263b;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+#container{
+    width: 850px;
+    margin:0 auto;
+    background-color:#415a77;
+    padding: 40px;
+    border-left: #0d1b2a solid 4px;
+    border-right: #0d1b2a solid 4px;
+}
+h1{
+    background-color: #778da9;
+    border: #fff, solid, 3px;
+    border-radius: 10px;
+    padding: 10px;
+    width: 60%;
+    text-align: center;
+    margin: 0px auto;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+h2{
+    text-align: center;
+    font-size: 1.5em;
+    font-style: italic;
+}
+h3{
+    border-left: double 20px #0d1b2a;
+    border-radius: 30px;
+    padding-left: 15px;
+}
+p{
+    line-height: 2.2em;
+}
+img{
+    float: left;
+    width:40%;
+    border: #0d1b2a solid 3px;
+    border-radius: 15px;
+    margin-right: 20px;
+}
+a:link{
+    color: aquamarine;
+    text-decoration: none;
+    font-weight: bold;
+}
+a:visited{
+    color:rgb(64, 150, 121);
+}
+a:hover{
+    color:rgb(211, 255, 240);
+    text-decoration: underline;
+}
+a:active{
+    color:blue;
+}
+#telescope{
+    float: right;
+    margin-left: 20px;
+    margin-right: 0;
+}
+/*class rule*/
+.highlight{
+    font-weight: bold;
+    background-color: #fca311;
+    padding: 3px;
+    color:black;
+    border-radius: 10px;
+
+}
+.highlight:hover{
+    background-color:rgb(255, 255, 185);
+}
 
