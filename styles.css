@@ -45,22 +45,22 @@ img{
     border-radius: 15px;
     margin-right: 20px;
 }
-#title:
-#title:hover{color: #fca311;}
+
+
 a:link{
-    color: aquamarine;
+    color: #fca311;
     text-decoration: none;
     font-weight: bold;
 }
 a:visited{
-    color:rgb(64, 150, 121);
+    color:#ce7018;
 }
 a:hover{
-    color:rgb(211, 255, 240);
+    color:#ffdca4;
     text-decoration: underline;
 }
 a:active{
-    color:blue;
+    color:#fc5b11;
 }
 #telescope{
     float: right;
