@@ -45,7 +45,31 @@ img{
     border-radius: 15px;
     margin-right: 20px;
 }
+.rainbow_text:active{
+  text-align: center;
+  background: linear-gradient(
+    to right, 
+    red, orange, yellow, green, blue, indigo, violet
+  );
+  
+  -webkit-background-clip: text;
+  background-clip: text;
+  
+  color: transparent;
+  
+  
+  animation: rainbow-animation 5s linear infinite;
+  background-size: 300% auto; /* Ensure enough space for the animation */
+}
 
+@keyframes rainbow-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 300% 50%; /* Adjust to control direction and length of movement */
+  }
+}
 
 a:link{
     color: #fca311;
@@ -67,13 +91,15 @@ a:active{
     margin-left: 20px;
     margin-right: 0;
 }
-/*class rule*/
+
 .highlight{
     font-weight: bold;
     background-color: #fca311;
     padding: 3px;
     color:black;
     border-radius: 10px;
+
+    
 
 }
 .highlight:hover{
@@ -110,7 +136,7 @@ a:active{
         padding: 0;
         border: none;
     }
-    body,h2,h3,p,div{
+    body,h3,p,div{
         background-color:#415a77;
     }
     #sidebar{
