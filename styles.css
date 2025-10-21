@@ -44,7 +44,23 @@ img{
     border: #0d1b2a solid 3px;
     border-radius: 15px;
     margin-right: 20px;
+    display: block;
+    object-fit: cover;
+
+    transition: transform 220ms cubic-bezier(.2,.8,.2,1), box-shadow 220ms ease;
+    transform-origin: center center;
+    will-change: transform;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
 }
+
+img:hover,
+img:focus,
+img:active {
+    transform: scale(1.04);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.35);
+}
+
 .rainbow_text:active{
   text-align: center;
   background: linear-gradient(
@@ -59,7 +75,7 @@ img{
   
   
   animation: rainbow-animation 5s linear infinite;
-  background-size: 300% auto; /* Ensure enough space for the animation */
+  background-size: 300% auto; 
 }
 
 @keyframes rainbow-animation {
@@ -67,7 +83,7 @@ img{
     background-position: 0% 50%;
   }
   100% {
-    background-position: 300% 50%; /* Adjust to control direction and length of movement */
+    background-position: 300% 50%; 
   }
 }
 
